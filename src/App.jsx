@@ -1,5 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Quiz from './pages/quiz/Quiz'
+import Introduce from './pages/introduce/Introduce'
 
 function App() {
 
@@ -7,8 +9,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<div className='introduce'>Introduce</div>} />
-          <Route path='/quiz' element={<div className='quiz'>Quiz</div>} />
+          <Route path='/' element={<Introduce />} />
+          <Route path='/quiz/:difficulty/:amount' element={<Quiz />} />
         </Routes>
       </Router>
     </>
