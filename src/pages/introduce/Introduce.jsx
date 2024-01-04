@@ -9,7 +9,7 @@ const Introduce = () => {
             <div className='introduce-container'>
                 <img src="https://image.similarpng.com/very-thumbnail/2020/12/Lorem-ipsum-logo-isolated-clipart-PNG.png" alt="" />
                 <Dropdown />
-                <div>Start Quiz</div>
+                <div className='introduce-btn'>Start Quiz</div>
             </div>
         </div>
     )
