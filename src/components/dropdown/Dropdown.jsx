@@ -1,16 +1,23 @@
-import './Dropdown.css'
+import './Dropdown.css';
 
 const Dropdown = ({ data, setDifficultyChange }) => {
+
+    const difficultyHandler = (e) => {
+        setDifficultyChange(e.target.value)
+        console.log(e.target.value)
+    }
+
     return (
         <div className='dropdown'>
-            <select onChange={e => setDifficultyChange(e.target.value)} name="" id="">
+            <select onChange={e => difficultyHandler(e)} name="" id="">
                 {
                     data.map((dt, i) => (
-                        <option value={dt}>{dt}</option>
+                        <option key={i} value={dt}>{dt}</option>
                     ))
                 }
             </select>
         </div>
-    )
+    );
 }
-export default Dropdown
+
+export default Dropdown;
