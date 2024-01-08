@@ -1,5 +1,5 @@
 import './QuestionCard.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 
@@ -12,7 +12,22 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         console.log(e.currentTarget.value);
         const checlAnswer = e.currentTarget.value == questionsData[count]?.correct_answer
         console.log(checlAnswer);
+        if (checlAnswer) {
+            setScore(score + 100)
+        }
+        setCount(count + 1)
+        if (count === 9) {
+            setModal(true)
+        }
+
     }
+
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimer(timer - 1)
+        }, 1000)
+    }, [timer])
 
     return (
         <div className='questionCard'>
