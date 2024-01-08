@@ -18,6 +18,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         setCount(count + 1)
         if (count === 9) {
             setModal(true)
+            setTimer(30)
         }
 
     }
