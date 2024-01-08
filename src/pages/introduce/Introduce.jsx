@@ -28,7 +28,7 @@ const Introduce = () => {
     return (
         <div className='introduce'>
             <div className='introduce-container'>
-                <img src="https://image.similarpng.com/very-thumbnail/2020/12/Lorem-ipsum-logo-isolated-clipart-PNG.png" alt="" />
+                <img src="src/img/quiz.png" alt="" />
                 <Dropdown data={difficulty} onSetDifficultyChange={setDifficultyChange} />
                 <div onClick={e => startQuiz()} className='introduce-btn'>Start Quiz</div>
             </div>
