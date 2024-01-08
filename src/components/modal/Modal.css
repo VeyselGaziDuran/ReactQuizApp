@@ -1,0 +1,34 @@
+.modal-btn {
+  width: 350px;
+  height: 50px;
+  font-size: 1.5rem;
+  background: #621be7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-btn:hover {
+  background: #fff;
+  color: #621be7;
+}
+
+.modal-btn:focus {
+  outline: none;
+}
+
+.modal {
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
