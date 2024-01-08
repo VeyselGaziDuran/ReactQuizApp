@@ -4,7 +4,6 @@ const Dropdown = ({ data, onSetDifficultyChange }) => {
 
     const difficultyHandler = (e) => {
         onSetDifficultyChange(e.target.value)
-        console.log(e.target.value)
     }
 
     return (

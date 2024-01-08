@@ -12,9 +12,6 @@ const Introduce = () => {
 
 
     const startQuiz = () => {
-
-        console.log('sadsadas');
-        console.log(difficultyChange);
         if (difficultyChange === 'select a value' || difficultyChange === '') {
             alert('Please select a value')
 

@@ -9,9 +9,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
 
 
     const approvedChoice = (e) => {
-        console.log(e.currentTarget.value);
         const checlAnswer = e.currentTarget.value == questionsData[count]?.correct_answer
-        console.log(checlAnswer);
         if (checlAnswer) {
             setScore(score + 100)
         }
