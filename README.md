@@ -1,4 +1,4 @@
-# ReactQuizApp App
+# ReactQuizApp
 
 Welcome to My ReactQuizApp App! This project was bootstrapped with [Vite](https://vitejs.dev/) and uses React.
 
